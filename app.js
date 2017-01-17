@@ -14,10 +14,6 @@ app.get("/", function(req, res){
 	res.render('index.html');
 });
 
-app.get("/admin", function(req, res){
-	res.render('admin.html');
-});
-
 app.get("/login", function(req, res){
 
 	var a = req.query.uname;
@@ -32,8 +28,6 @@ app.get("/login", function(req, res){
 		res.redirect('login.html');
 	}
 });	
-
-
 
 app.listen(port, function(){
 	console.log("Server running on Port No. "+port);

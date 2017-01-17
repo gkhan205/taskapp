@@ -18,8 +18,6 @@ app.get("/admin", function(req, res){
 	res.render('admin.html');
 });
 
-var user;
-
 app.get("/login", function(req, res){
 
 	var a = req.query.uname;
